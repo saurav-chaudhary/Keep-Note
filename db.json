@@ -1,0 +1,31 @@
+{
+  "notes": [
+    {
+      "title": "saurav",
+      "notes": "hii all",
+      "id": 15
+    },
+    {
+      "title": "wdasd",
+      "notes": "dawdwdasd",
+      "id": 16
+    },
+    {
+      "title": "asudhasd",
+      "notes": "dawd",
+      "id": 17
+    }
+  ],
+  "trash": [
+    {
+      "title": "alfaa",
+      "notes": "asas aha",
+      "id": 1
+    },
+    {
+      "title": "booom",
+      "notes": "wawd",
+      "id": 2
+    }
+  ]
+}

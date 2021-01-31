@@ -1,0 +1,27 @@
+.bar{
+    margin-right: 1%;
+}
+#brand{
+    widows: 40px;
+    height: 40px;
+}
+.search{
+    margin-right: 50%;
+}
+.searPos{
+    width: 200%;;
+}
+.fas{
+    margin: 4%;
+    font-size:larger ;
+   
+}
+.fab{
+    margin: 4%;
+    font-size:larger ;
+}
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+}
+

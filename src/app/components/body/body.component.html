@@ -1,0 +1,62 @@
+<div>
+    <ul class="list-group ">
+        <li class="list-group-item side" ><i class="far fa-lightbulb"></i>Notes</li>
+        <li class="list-group-item side"><i class="fas fa-bell"></i>Reminder</li>
+       
+      
+      </ul>
+   
+</div>
+<div class="accordion container1" id="accordionExample">
+    <div class="accordion-item">
+       
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <input type="text" [(ngModel)]="title" placeholder="title">
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+       <input class="inputsize" type="text"  [(ngModel)]="notes">
+       <button class="btn btn-primary" (click)=" addNotes()"><i class="fas fa-share-square"></i></button>
+     
+        </div>
+      </div>
+    </div>
+   
+   
+  </div>
+
+
+
+<div class="container">
+
+  <div class="card" style="width: 18rem;"*ngFor="let n of allNotes">
+   
+    <div class="card-body" >
+      <h5 class="card-title">{{n.title}}</h5>
+      <p class="card-text">{{n.notes}}</p>
+      <button  (click)="deleteNotes(n)" (click)="addTrash(n)" class="btn btn-primary"><i class="fas fa-trash-alt float-end "></i></button>
+      <button (click)="update(n)" class="btn btn-primary"><i class="fas fa-edit"></i></button>
+     
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="container2">
+  <h1> <i class="fas fa-trash-restore-alt"></i>  Trash </h1>
+  <div class="card" style="width: 18rem;"*ngFor="let t of trash">
+   
+    <div class="card-body" >
+      <h5 class="card-title">{{t.title}}</h5>
+      <p class="card-text">{{t.notes}}</p>
+    <button (click)="deleteTrash(t)" (click)="addNotesTrash(t) "  class="btn btn-primary"><i class="fas fa-window-restore"></i></button>
+     
+    </div>
+  </div>
+  
+</div>
+
+

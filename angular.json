@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "notes"
+  "defaultProject": "notes",
+  "cli": {
+    "analytics": "33ce6d61-7137-427a-a489-5227ece34c65"
+  }
 }

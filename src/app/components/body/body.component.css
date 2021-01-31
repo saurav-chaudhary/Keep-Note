@@ -1,0 +1,15 @@
+.side{
+    width: 20%;
+}
+.container1{
+    margin-left: 50%;
+    width: 40%;
+    margin-top: -5%;
+}
+.container{
+    margin-left: 30%;
+    width: 40%;
+    margin-top: 5%;
+    display: flex;
+    
+}
